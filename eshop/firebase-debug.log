@@ -1,0 +1,25 @@
+[debug] [2022-07-03T14:32:08.028Z] ----------------------------------------------------------------------
+[debug] [2022-07-03T14:32:08.029Z] Command:       /opt/homebrew/Cellar/node/18.3.0/bin/node /opt/homebrew/bin/firebase login --no-localhost
+[debug] [2022-07-03T14:32:08.029Z] CLI Version:   11.2.0
+[debug] [2022-07-03T14:32:08.029Z] Platform:      darwin
+[debug] [2022-07-03T14:32:08.029Z] Node Version:  v18.3.0
+[debug] [2022-07-03T14:32:08.030Z] Time:          Sun Jul 03 2022 22:32:08 GMT+0800 (中国标准时间)
+[debug] [2022-07-03T14:32:08.030Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[debug] [2022-07-03T14:32:09.336Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2022-07-03T14:32:09.337Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"f38d7712-d981-42c1-b711-481499368d2d"}
+[debug] [2022-07-03T14:32:39.016Z] ----------------------------------------------------------------------
+[debug] [2022-07-03T14:32:39.017Z] Command:       /opt/homebrew/Cellar/node/18.3.0/bin/node /opt/homebrew/bin/firebase login --no-localhost
+[debug] [2022-07-03T14:32:39.017Z] CLI Version:   11.2.0
+[debug] [2022-07-03T14:32:39.017Z] Platform:      darwin
+[debug] [2022-07-03T14:32:39.017Z] Node Version:  v18.3.0
+[debug] [2022-07-03T14:32:39.018Z] Time:          Sun Jul 03 2022 22:32:39 GMT+0800 (中国标准时间)
+[debug] [2022-07-03T14:32:39.018Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2022-07-03T14:32:40.516Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2022-07-03T14:32:40.516Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"a33a43b9-a0f7-4e2e-b5f0-6decb1cece75"}

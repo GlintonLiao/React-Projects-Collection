@@ -8,7 +8,7 @@ export default function CheckoutProduct({id, title, price, rating, image}) {
 
   const removeFromBasket = () => {
     dispatch({
-      type: "REMOVE", 
+      type: "REMOVE_FROM_BASKET", 
       id: id, 
     })
   }

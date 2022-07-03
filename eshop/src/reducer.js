@@ -14,7 +14,7 @@ const reducer = (state, action) => {
         basket: [...state.basket, action.item], 
       }
     
-    case "REMOVE": 
+    case "REMOVE_FROM_BASKET": 
       let flag = false;
       const newBasket = state.basket.filter(item => {
         if (item.id === action.id && !flag) {
