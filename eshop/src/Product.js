@@ -11,8 +11,9 @@ export default function Product({id, title, price, rating, image}) {
       type: "ADD_TO_BASKET", 
       item: {
         id: id, 
+        title: title, 
         image: image, 
-        paice: price, 
+        price: price, 
         rating: rating,
       },
     })
