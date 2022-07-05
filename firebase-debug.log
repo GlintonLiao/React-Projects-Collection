@@ -1,39 +1,25 @@
-[debug] [2022-07-03T14:34:28.322Z] ----------------------------------------------------------------------
-[debug] [2022-07-03T14:34:28.323Z] Command:       /opt/homebrew/Cellar/node/18.3.0/bin/node /opt/homebrew/bin/firebase login --no-localhost
-[debug] [2022-07-03T14:34:28.323Z] CLI Version:   11.2.0
-[debug] [2022-07-03T14:34:28.323Z] Platform:      darwin
-[debug] [2022-07-03T14:34:28.323Z] Node Version:  v18.3.0
-[debug] [2022-07-03T14:34:28.323Z] Time:          Sun Jul 03 2022 22:34:28 GMT+0800 (中国标准时间)
-[debug] [2022-07-03T14:34:28.324Z] ----------------------------------------------------------------------
+[debug] [2022-07-04T11:51:20.389Z] ----------------------------------------------------------------------
+[debug] [2022-07-04T11:51:20.389Z] Command:       /opt/homebrew/Cellar/node/18.3.0/bin/node /opt/homebrew/bin/firebase login --no-localhost
+[debug] [2022-07-04T11:51:20.390Z] CLI Version:   11.2.0
+[debug] [2022-07-04T11:51:20.390Z] Platform:      darwin
+[debug] [2022-07-04T11:51:20.390Z] Node Version:  v18.3.0
+[debug] [2022-07-04T11:51:20.390Z] Time:          Mon Jul 04 2022 19:51:20 GMT+0800 (中国标准时间)
+[debug] [2022-07-04T11:51:20.390Z] ----------------------------------------------------------------------
 [debug] 
 [info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
  
 [info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
-[debug] [2022-07-03T14:34:29.743Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
-[debug] [2022-07-03T14:34:29.744Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"70c0d2aa-53a4-4c9c-a21a-912dbb18aed9"}
-[debug] [2022-07-03T14:34:40.422Z] ----------------------------------------------------------------------
-[debug] [2022-07-03T14:34:40.423Z] Command:       /opt/homebrew/Cellar/node/18.3.0/bin/node /opt/homebrew/bin/firebase login --no-localhost
-[debug] [2022-07-03T14:34:40.423Z] CLI Version:   11.2.0
-[debug] [2022-07-03T14:34:40.423Z] Platform:      darwin
-[debug] [2022-07-03T14:34:40.423Z] Node Version:  v18.3.0
-[debug] [2022-07-03T14:34:40.424Z] Time:          Sun Jul 03 2022 22:34:40 GMT+0800 (中国标准时间)
-[debug] [2022-07-03T14:34:40.424Z] ----------------------------------------------------------------------
+[debug] [2022-07-04T11:51:21.394Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2022-07-04T11:51:21.395Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"8b862092-7a3d-4667-9fbe-5837c667ae5d"}
+[debug] [2022-07-04T11:51:35.280Z] ----------------------------------------------------------------------
+[debug] [2022-07-04T11:51:35.281Z] Command:       /opt/homebrew/Cellar/node/18.3.0/bin/node /opt/homebrew/bin/firebase login --no-localhost
+[debug] [2022-07-04T11:51:35.281Z] CLI Version:   11.2.0
+[debug] [2022-07-04T11:51:35.281Z] Platform:      darwin
+[debug] [2022-07-04T11:51:35.281Z] Node Version:  v18.3.0
+[debug] [2022-07-04T11:51:35.282Z] Time:          Mon Jul 04 2022 19:51:35 GMT+0800 (中国标准时间)
+[debug] [2022-07-04T11:51:35.282Z] ----------------------------------------------------------------------
 [debug] 
 [info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
  
-[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
-[debug] [2022-07-03T14:34:41.574Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
-[debug] [2022-07-03T14:34:41.575Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"86b6d011-f479-46fb-a44c-043adb1495a5"}
-[debug] [2022-07-03T14:34:58.594Z] ----------------------------------------------------------------------
-[debug] [2022-07-03T14:34:58.595Z] Command:       /opt/homebrew/Cellar/node/18.3.0/bin/node /opt/homebrew/bin/firebase login --no-localhost
-[debug] [2022-07-03T14:34:58.595Z] CLI Version:   11.2.0
-[debug] [2022-07-03T14:34:58.595Z] Platform:      darwin
-[debug] [2022-07-03T14:34:58.596Z] Node Version:  v18.3.0
-[debug] [2022-07-03T14:34:58.596Z] Time:          Sun Jul 03 2022 22:34:58 GMT+0800 (中国标准时间)
-[debug] [2022-07-03T14:34:58.596Z] ----------------------------------------------------------------------
-[debug] 
-[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
- 
-[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
-[debug] [2022-07-03T14:34:59.657Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
-[debug] [2022-07-03T14:34:59.658Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"6f0159fe-132d-4d97-9f4c-46c9d245c997"}
+[debug] [2022-07-04T11:51:36.978Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2022-07-04T11:51:36.979Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"d327720b-a87c-4a7d-af3f-6d2be702da4e"}
