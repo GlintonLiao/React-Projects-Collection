@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import MovieList from '././components/MovieList'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
 import AddFavorites from './components/AddFavorites';
@@ -29,31 +29,49 @@ function App() {
     getMovieRequest(searchValue);
   }, [searchValue]);
 
-  const AddFavoriteMovies = (movie) => {
+  useEffect(() => {
+    const movieFavorites = JSON.parse(
+      localStorage.getItem('react-movie-app-favourites')
+    );
+
+    if (movieFavorites) {
+      setFavorites(movieFavorites);
+    }
+  }, []);
+
+  const saveToLocalStorage = (items) => {
+    localStorage.setItem('react-movie-app-favourites', JSON.stringify(items));
+  };
+
+  const addFavoriteMovie = (movie) => {
     const newFavoritesList = [...favorites, movie]
     setFavorites(newFavoritesList);
+    saveToLocalStorage(newFavoritesList);
   }
 
   const removeFavoriteMovie = (movie) => {
-		const newFavouriteList = favorites.filter(
-			(favourite) => favourite.imdbID !== movie.imdbID
-		);
+    const newFavoritesList = favorites.filter(
+      (favorite) => favorite.imdbID !== movie.imdbID
+    );
 
-		setFavorites(newFavouriteList);
-	};
+    console.log(newFavoritesList);
+
+    setFavorites(newFavoritesList);
+    saveToLocalStorage(newFavoritesList);
+  };
 
   return (
     <div className='container-fluid movie-app'>
 
       <div className="row d-flex align-items-center mt-4 mb-4">
-        <MovieListHeading heading="Movies"/>
+        <MovieListHeading heading="Movies" />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
 
       <div className="row">
-        <MovieList 
+        <MovieList
           movies={movies}
-          handleFavoritesClick={AddFavoriteMovies}
+          handleFavoritesClick={addFavoriteMovie}
           favoriteComponent={AddFavorites}
         />
       </div>
@@ -62,11 +80,11 @@ function App() {
         <MovieListHeading heading="Favorites" />
       </div>
       <div className="row">
-      <MovieList
-					movies={favorites}
-					handleFavouritesClick={removeFavoriteMovie}
-					favouriteComponent={RemoveFavorites}
-				/>
+        <MovieList
+          movies={favorites}
+          handleFavoritesClick={removeFavoriteMovie}
+          favoriteComponent={RemoveFavorites}
+        />
       </div>
     </div>
   );
