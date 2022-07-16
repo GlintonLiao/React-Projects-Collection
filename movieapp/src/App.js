@@ -2,33 +2,71 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MovieList from '././components/MovieList'
 import './App.css';
+import MovieListHeading from './components/MovieListHeading';
+import SearchBox from './components/SearchBox';
+import AddFavorites from './components/AddFavorites';
+import RemoveFavorites from './components/RemoveFavorites';
 
 
 function App() {
 
-  const [movies, setMovies] = useState([
-    {
-      "Title": "Star Wars: Empire at War",
-      "Year": "2006",
-      "imdbID": "tt0804909",
-      "Type": "game",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BOGRiMDllMDUtOWFkZS00MGIyLWFkOTQtZjY2ZGUyNzY5YWRiXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Star Wars Empire at War: Forces of Corruption",
-      "Year": "2006",
-      "imdbID": "tt0879261",
-      "Type": "game",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNGIxYTZiMmQtYjYzMS00ZmExLTljZDktMjE1ODY5OTJlYjlmXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg"
-    },
-  ])
+  const [movies, setMovies] = useState([]);
+  const [searchValue, setSearchValue] = useState('');
+  const [favorites, setFavorites] = useState([]);
+
+  const getMovieRequest = async (searchValue) => {
+    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=f0f55aba`;
+
+    const response = await fetch(url);
+    const responseJson = await response.json();
+
+    if (responseJson.Search) {
+      setMovies(responseJson.Search)
+    }
+  }
+
+  useEffect(() => {
+    getMovieRequest(searchValue);
+  }, [searchValue]);
+
+  const AddFavoriteMovies = (movie) => {
+    const newFavoritesList = [...favorites, movie]
+    setFavorites(newFavoritesList);
+  }
+
+  const removeFavoriteMovie = (movie) => {
+		const newFavouriteList = favorites.filter(
+			(favourite) => favourite.imdbID !== movie.imdbID
+		);
+
+		setFavorites(newFavouriteList);
+	};
 
   return (
     <div className='container-fluid movie-app'>
+
+      <div className="row d-flex align-items-center mt-4 mb-4">
+        <MovieListHeading heading="Movies"/>
+        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+      </div>
+
       <div className="row">
         <MovieList 
           movies={movies}
+          handleFavoritesClick={AddFavoriteMovies}
+          favoriteComponent={AddFavorites}
         />
+      </div>
+
+      <div className="row d-flex align-items-conter mt-4 mb-4">
+        <MovieListHeading heading="Favorites" />
+      </div>
+      <div className="row">
+      <MovieList
+					movies={favorites}
+					handleFavouritesClick={removeFavoriteMovie}
+					favouriteComponent={RemoveFavorites}
+				/>
       </div>
     </div>
   );
